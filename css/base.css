@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+    user-select: none;
+}
+
+html{
+    font-size: 26.666vw;
+}
+
+body{
+    background-color: #f5f5f5;
+    font-size: .16rem;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+input{
+    border: none;
+    outline-style: none;
+}
+
+button{
+    border: none;
+    background-color: #fff;
+}
+
+/* 版心 */
+.wrappper{
+    width: 3.75rem;
+    margin: 0 auto;
+}
+
+/* 单行文本溢出显示省略号 */
+.over-els{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 多行文本溢出隐藏显省略号 */
+.rows-over-els{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+/* 清楚浮动 */
+.cleafix::after{
+    content: '';
+    display: block;
+    clear: both;
+}

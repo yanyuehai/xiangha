@@ -1,0 +1,73 @@
+header .xh-header {
+  height: 0.44rem;
+  display: flex;
+  padding: 0.05rem 0.1rem;
+  justify-content: space-between;
+  background-image: linear-gradient(90deg, #fc1d1c, #ff7a18);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  font-size: 0.16rem;
+}
+header .xh-header .xh-input {
+  width: 3.21rem;
+  border-radius: 0.44rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+header .xh-header .xh-input .iconfont {
+  font-size: 0.16rem;
+  padding: 0.1rem;
+}
+header .xh-header .xh-msg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #fff;
+}
+header .xh-header .xh-msg .iconfont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 0.17rem;
+}
+header .xh-header .xh-msg span {
+  font-size: 0.13rem;
+}
+footer .xh-footer {
+  box-shadow: 0 -2px 7px 0 hsla(0, 0%, 89.8%, 0.5);
+  width: 3.75rem;
+  height: 0.51rem;
+  position: fixed;
+  left: 0;
+  bottom: -0.01rem;
+  z-index: 999;
+  background-color: #fff;
+}
+footer .xh-footer .nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .xh-footer .nav li {
+  width: 0.75rem;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.06rem;
+}
+footer .xh-footer .nav li .iconfont {
+  font-size: 0.2rem;
+}
+footer .xh-footer .nav li span {
+  width: 100%;
+  text-align: center;
+}
+footer .xh-footer .nav .nav-this {
+  color: #ff0d24;
+}

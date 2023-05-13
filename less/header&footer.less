@@ -1,0 +1,96 @@
+// 头部
+header {
+    .xh-header {
+        height: .44rem;
+        display: flex;
+        padding: .05rem .1rem;
+        justify-content: space-between;
+        background-image: linear-gradient(90deg, #fc1d1c, #ff7a18);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        font-size: .16rem;
+
+        .xh-input {
+            width: 3.21rem;
+            border-radius: .44rem;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+
+            .iconfont {
+                font-size: .16rem;
+                padding: .1rem;
+            }
+
+
+        }
+
+        .xh-msg {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: #fff;
+
+            .iconfont {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                font-size: .17rem;
+            }
+
+            span {
+                font-size: .13rem;
+            }
+        }
+    }
+
+}
+
+
+// 尾部
+footer {
+    .xh-footer {
+        box-shadow: 0 -2px 7px 0 hsla(0, 0%, 89.8%, .5);
+        width: 3.75rem;
+        height: .51rem;
+        position: fixed;
+        left: 0;
+        bottom: -0.01rem;
+        z-index: 999;
+        background-color: #fff;
+
+        .nav {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                width: .75rem;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: .06rem;
+
+                .iconfont {
+                    font-size: .2rem;
+                }
+
+                span {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .nav-this {
+                color: rgb(255, 13, 36);
+            }
+        }
+
+    }
+
+}

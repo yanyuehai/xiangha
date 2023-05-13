@@ -1,0 +1,107 @@
+html,
+body {
+  padding-bottom: 0.5rem;
+  height: 100%;
+}
+header {
+  width: 100%;
+  background-color: #fff;
+  height: 0.44rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0.1rem;
+}
+header .head-input {
+  width: 100%;
+  height: 0.3rem;
+  background-color: #f5f5f5;
+  color: #949494;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+header .iconfont {
+  font-size: 0.16rem;
+  padding: 0 0.1rem;
+}
+header input {
+  flex: 1;
+  height: 0.3rem;
+  background-color: #f5f5f5;
+  font-size: 0.16rem;
+}
+main {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.01rem;
+}
+main .left {
+  width: 0.93rem;
+}
+main .left .nav {
+  width: 100%;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  padding: 0 0.18rem;
+  font-size: 0.14rem;
+}
+main .left .nav-this {
+  background-color: #fff;
+  position: relative;
+}
+main .left .nav-this::after {
+  content: '';
+  width: 0.03rem;
+  height: 0.18rem;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main .right {
+  flex: 1;
+  height: 100%;
+  background-color: #fff;
+  overflow: auto;
+}
+main .right .nav-main {
+  margin-top: 0.18rem;
+  padding: 0 0.15rem;
+  background-color: #fff;
+}
+main .right .nav-main .title {
+  padding: 0.05rem;
+}
+main .right .nav-main .title h2 {
+  font-size: 0.14rem;
+  font-weight: 300;
+}
+main .right .nav-main .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .right .nav-main .list .item {
+  width: 0.66rem;
+  margin-right: 0.2rem;
+}
+main .right .nav-main .list .item:nth-child(3n) {
+  margin-right: 0;
+}
+main .right .nav-main .list .item .pic {
+  width: 0.66rem;
+  height: 0.66rem;
+}
+main .right .nav-main .list .item .pic img {
+  width: 100%;
+  height: 100%;
+}
+main .right .nav-main .list .item .tit {
+  width: 100%;
+  text-align: center;
+  font-size: 0.12rem;
+  line-height: 0.3rem;
+}

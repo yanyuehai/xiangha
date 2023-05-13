@@ -1,0 +1,187 @@
+body {
+  padding-bottom: 0.5rem !important;
+}
+header {
+  width: 100%;
+  height: 2rem;
+  background-image: url(../img/mine_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  position: relative;
+}
+header .xh-set {
+  display: flex;
+  justify-content: end;
+  padding: 0.1rem 0;
+}
+header .xh-set .iconfont {
+  margin-right: 0.05rem;
+  color: #d8cccc;
+  font-size: 0.17rem;
+}
+header .xh-user {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+}
+header .xh-user .left {
+  display: flex;
+  align-items: center;
+  margin-left: 0.2rem;
+}
+header .xh-user .left .pic {
+  width: 0.48rem;
+  height: 0.48rem;
+}
+header .xh-user .left .pic img {
+  width: 100%;
+  height: 100%;
+}
+header .xh-user .left h1 {
+  color: #fff;
+  font-size: 0.16rem;
+  margin-left: 0.1rem;
+}
+header .xh-user .rigth {
+  background-color: hsla(0, 0%, 98%, 0.2);
+  height: 0.24rem;
+  width: 0.6rem;
+  text-align: center;
+  line-height: 0.24rem;
+  font-size: 0.12rem;
+  border-top-left-radius: 0.1rem;
+  border-bottom-left-radius: 0.1rem;
+  color: #fff;
+}
+header .xh-user .rigth .iconfont {
+  font-size: 12px;
+  color: #fff;
+}
+header .user-track {
+  width: 3.55rem;
+  height: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0.36rem;
+  background-color: #fff;
+  display: flex;
+  border-radius: 0.05rem;
+}
+header .user-track .iconfont {
+  font-size: 0.14rem;
+  color: #6f6c6c;
+}
+header .user-track .collect {
+  width: 1.77rem;
+  text-align: center;
+  padding-top: 0.1rem;
+}
+header .user-track .collect h2 {
+  font-size: 0.14rem;
+  font-weight: 400;
+}
+header .user-track .collect p {
+  text-align: center;
+  line-height: 0.3rem;
+  font-weight: 600;
+}
+header .user-track > span {
+  width: 0.02rem;
+  height: 0.18rem;
+  background-color: #666;
+  margin-top: 0.1rem;
+}
+header .user-track .track {
+  width: 1.77rem;
+  text-align: center;
+  padding-top: 0.1rem;
+}
+header .user-track .track h2 {
+  font-size: 0.14rem;
+  font-weight: 400;
+}
+header .user-track .track p {
+  text-align: center;
+  line-height: 0.3rem;
+  font-weight: 600;
+}
+.xh-order {
+  width: 100%;
+  padding: 0 0.1rem;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  margin-top: 0.2rem;
+}
+.xh-order .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.05rem 0;
+}
+.xh-order .title h3 {
+  font-size: 0.16rem;
+}
+.xh-order .title p {
+  font-size: 0.12rem;
+  color: #666;
+}
+.xh-order .title p .iconfont {
+  vertical-align: middle;
+  font-size: 0.16rem;
+  color: #666;
+}
+.xh-order .user-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.1rem 0;
+}
+.xh-order .user-nav .nav-item {
+  text-align: center;
+  font-size: 0.12rem;
+}
+.xh-order .user-nav .nav-item h4 {
+  padding: 0.05rem 0;
+}
+.xh-order .user-nav .nav-item .iconfont {
+  font-size: 0.24rem;
+  color: #565656;
+  font-weight: 300;
+}
+.xh-order .user-nav .nav-item p {
+  padding: 0.05rem 0;
+  color: #565656;
+}
+.xh-serve {
+  width: 100%;
+  padding: 0 0.1rem;
+}
+.xh-serve .title {
+  padding: 0.1rem 0;
+}
+.xh-serve .title h3 {
+  font-size: 16px;
+}
+.xh-serve .serve-nav {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+.xh-serve .serve-nav .nav-item {
+  padding: 0.1rem 0.298rem;
+}
+.xh-serve .serve-nav .nav-item .pic {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+.xh-serve .serve-nav .nav-item .pic img {
+  width: 100%;
+  height: 100%;
+}
+.xh-serve .serve-nav .nav-item p {
+  line-height: 0.3rem;
+  font-size: 0.13rem;
+}

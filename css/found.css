@@ -1,0 +1,128 @@
+body {
+  padding-top: 0.44rem !important;
+  padding-bottom: 0.5rem !important;
+}
+.icon-faxian {
+  border-radius: 0.1rem;
+  background-color: red;
+  color: #fff;
+}
+.xh-carousel {
+  width: 100%;
+  height: 2.12rem;
+  background-color: #fff;
+}
+.xh-carousel .swiper {
+  width: 100%;
+  height: 100%;
+}
+.xh-carousel .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.xh-carousel .swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.xh-hot {
+  width: 100%;
+  padding: 0 0.1rem;
+  background-color: #fff;
+}
+.xh-hot .hot-item {
+  width: 100%;
+}
+.xh-hot .hot-item .title {
+  width: 100%;
+  height: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.xh-hot .hot-item .title h4 {
+  font-size: 0.21rem;
+}
+.xh-hot .hot-item .pic-main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.xh-hot .hot-item .pic-main .pic-itme {
+  width: 1.72rem;
+  height: 0.73rem;
+  margin-bottom: 0.1rem;
+}
+.xh-hot .hot-item .pic-main .pic-itme img {
+  width: 100%;
+  height: 100%;
+}
+.xh-goods {
+  width: 100%;
+  padding: 0 0.1rem;
+  padding-top: 0.1rem;
+  background-color: #fff;
+}
+.xh-goods .goods {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.xh-goods .goods .goods-item {
+  width: 1.72rem;
+  background-color: #fff;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  box-shadow: rgba(93, 113, 127, 0.08) 0px 2px 8px;
+  margin-bottom: 0.1rem;
+}
+.xh-goods .goods .goods-item .pic {
+  width: 1.72rem;
+  height: 1.72rem;
+  border-radius: 0.12rem;
+  overflow: hidden;
+}
+.xh-goods .goods .goods-item .pic img {
+  width: 100%;
+  height: 100%;
+}
+.xh-goods .goods .goods-item .tit {
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.2rem;
+  font-size: 0.14rem;
+  color: #000;
+}
+.xh-goods .goods .goods-item .price {
+  margin-top: 0.1rem;
+  padding: 0.1rem;
+  color: red;
+  font-size: 0.12rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.xh-goods .goods .goods-item .price .iconfont {
+  font-size: 0.14rem;
+  padding: 0.05rem;
+  background-color: red;
+  color: #fff;
+  border-radius: 0.15rem;
+}

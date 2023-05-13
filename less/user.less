@@ -1,0 +1,227 @@
+body {
+    padding-bottom: .5rem !important;
+}
+
+header {
+    width: 100%;
+    height: 2rem;
+    background-image: url(../img/mine_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    position: relative;
+
+    .xh-set {
+        display: flex;
+        justify-content: end;
+        padding: .1rem 0;
+
+        .iconfont {
+            margin-right: .05rem;
+            color: #d8cccc;
+            font-size: .17rem;
+        }
+    }
+
+    .xh-user {
+        display: flex;
+        justify-content: space-between;
+        margin-top: .2rem;
+
+        .left {
+            display: flex;
+            align-items: center;
+            margin-left: .2rem;
+
+            .pic {
+                width: .48rem;
+                height: .48rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            h1 {
+                color: #fff;
+                font-size: .16rem;
+                margin-left: .1rem;
+            }
+        }
+
+        .rigth {
+            background-color: hsla(0, 0%, 98%, .2);
+            height: .24rem;
+            width: .6rem;
+            text-align: center;
+            line-height: .24rem;
+            font-size: .12rem;
+            border-top-left-radius: .1rem;
+            border-bottom-left-radius: .1rem;
+            color: #fff;
+
+            .iconfont {
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+
+    }
+
+    .user-track {
+        width: 3.55rem;
+        height: 1rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -0.36rem;
+        background-color: #fff;
+        display: flex;
+        border-radius: .05rem;
+
+        .iconfont {
+            font-size: .14rem;
+            color: #6f6c6c;
+        }
+
+        .collect {
+            width: 1.77rem;
+            text-align: center;
+            padding-top: .1rem;
+
+            h2 {
+                font-size: .14rem;
+                font-weight: 400;
+            }
+
+            p {
+                text-align: center;
+                line-height: .3rem;
+                font-weight: 600;
+            }
+        }
+
+        &>span {
+            width: .02rem;
+            height: .18rem;
+            background-color: #666;
+            margin-top: .1rem;
+        }
+
+        .track {
+            width: 1.77rem;
+            text-align: center;
+            padding-top: .1rem;
+
+            h2 {
+                font-size: .14rem;
+                font-weight: 400;
+            }
+
+            p {
+                text-align: center;
+                line-height: .3rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+// 订单
+.xh-order{
+    width: 100%;
+    padding: 0 .1rem;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    margin-top: .2rem;
+
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .05rem 0;
+
+        h3{
+            font-size: .16rem;
+        }
+
+        p{
+            font-size: .12rem;
+            color: #666;
+
+            .iconfont{
+                vertical-align: middle;
+                font-size: .16rem;
+                color: #666;
+            }
+        }
+    }
+
+    .user-nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: .1rem 0;
+
+        .nav-item{
+            text-align: center;
+            font-size: .12rem;
+
+            h4{
+                padding: .05rem 0;
+            }
+
+            .iconfont{
+                font-size: .24rem;
+                color: #565656;
+                font-weight: 300;
+            }
+
+            p{
+                padding: .05rem 0;
+                color: #565656;
+            }
+        }
+    }
+
+}
+
+// 服务
+.xh-serve{
+    width: 100%;
+    padding: 0 .1rem;
+    .title{
+        padding: .1rem 0;
+        h3{
+            font-size: 16px;
+        }
+    }
+
+    .serve-nav{
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        
+        .nav-item{
+            padding: .1rem .298rem;
+
+            .pic{
+                width: .25rem;
+                height: .25rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            p{
+                line-height: .3rem;
+                font-size: .13rem;
+            }
+
+        }
+    }
+}

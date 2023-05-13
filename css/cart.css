@@ -1,0 +1,38 @@
+body {
+  padding-bottom: 0.5rem !important;
+}
+header {
+  background-color: #fff;
+  width: 100%;
+}
+header h1 {
+  text-align: center;
+  font-size: 0.16rem;
+  line-height: 0.45rem;
+}
+.xh-cart {
+  width: 100%;
+  padding: 0 0.1rem;
+  background-color: #fff;
+}
+.xh-cart .cart-none {
+  width: 100%;
+  padding: 0.6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.xh-cart .cart-none .pic {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+.xh-cart .cart-none .pic img {
+  width: 100%;
+  height: 100%;
+}
+.xh-cart .cart-none p {
+  font-size: 0.13rem;
+  color: #949494;
+  line-height: 0.2rem;
+  text-align: center;
+}
