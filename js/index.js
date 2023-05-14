@@ -14,8 +14,9 @@ let arr = [
     {
         img: 'https://img0.baidu.com/it/u=4213316938,3422461529&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500',
     }
-
 ]
+
+let goodList = []
 // 请求数据
 async function getData() {
     try {
@@ -32,6 +33,7 @@ async function getData() {
         let list = []
         for (let i = 6; i < 10; i++) {
             list = [...list, ...data.data.data[i].data.info]
+            goodList = [...list, ...data.data.data[i].data.info]
         }
         renGoods(list)
     } catch (err) {
@@ -47,7 +49,7 @@ function renSwiper(data) {
         $('.swiper-wrapper').append($(`<div class="swiper-slide"><img src=${v.img} alt=""></div>`))
     });
     // 轮播图
-    var swiper = new Swiper(".mySwiper", {loop: true, autoplay: true,});
+    var swiper = new Swiper(".mySwiper", { loop: true, autoplay: true, });
 }
 
 // 渲染分类导航
@@ -124,10 +126,16 @@ function renGoods(data) {
             <div class="tit rows-over-els">${v.goods_name}</div>
             <div class="price">
                 <span>￥${v.goods_price}</span>
-                <i class="iconfont icon-gouwuche"></i>
+                <i class="iconfont icon-gouwuche cart-item"></i>
             </div>
         </div>
     </div>`))
+    })
+
+    Array.from(document.getElementsByClassName("cart-item")).forEach((v, i) => {
+        v.onclick = function () {
+            myCart(goodList[i])
+        }
     })
 }
 
@@ -144,23 +152,42 @@ function zero(n) {
     return n < 10 ? '0' + n : n
 }
 
+
+// 添加购物车
+function myCart(goods) {
+    if (!localStorage.getItem("data")) {
+        let data = []
+        data.push(goods)
+        localStorage.setItem('data', JSON.stringify(data))
+    } else {
+        let data = JSON.parse(localStorage.getItem('data'))
+        if (!data.find((v) => {
+            return v.gid === goods.gid
+        })) {
+            data.push(goods)
+            localStorage.setItem('data', JSON.stringify(data))
+        }
+    }
+}
+
+
 // 下方导航跳转
-$('.xh-footer li').eq(0).on("tap", function() {
+$('.xh-footer li').eq(0).on("tap", function () {
     location.href = './index.html'
 })
 
-$('.xh-footer li').eq(1).on("tap", function() {
+$('.xh-footer li').eq(1).on("tap", function () {
     location.href = './categroy.html'
 })
 
-$('.xh-footer li').eq(2).on("tap", function() {
+$('.xh-footer li').eq(2).on("tap", function () {
     location.href = './found.html'
 })
 
-$('.xh-footer li').eq(3).on("tap", function() {
+$('.xh-footer li').eq(3).on("tap", function () {
     location.href = './cart.html'
 })
 
-$('.xh-footer li').eq(4).on("tap", function() {
+$('.xh-footer li').eq(4).on("tap", function () {
     location.href = './user.html'
 })

@@ -16,6 +16,8 @@ let arr = [
     }
 
 ]
+
+let goodList
 // 请求数据
 async function getData() {
     let data = await getFetch(replaceHost(`https://mall.xiangha.com/cmobile/index.php?app=index&mod=topic&activity_type=wapcmshome`))
@@ -25,7 +27,8 @@ async function getData() {
     let d = data.data.data
     renPic([d[1], d[3], d[5], d[7]], [d[2], d[4], d[6], d[8]])
     // 商品列表
-    renGoods(data.data.data[9].data.info)
+    goodList = data.data.data[9].data.info
+    renGoods(goodList)
 }
 
 getData()
@@ -73,12 +76,37 @@ function renGoods(data) {
             <div class="tit rows-over-els">${v.goods_name}</div>
             <div class="price">
                 <span>￥${v.goods_price}</span>
-                <i class="iconfont icon-gouwuche"></i>
+                <i class="iconfont icon-gouwuche cart-item"></i>
             </div>
         </div>
     </div>`))
     })
+
+    Array.from(document.getElementsByClassName("cart-item")).forEach((v, i) => {
+        v.onclick = function () {
+            myCart(goodList[i])
+        }
+    })
 }
+
+
+// 添加购物车
+function myCart(goods) {
+    if (!localStorage.getItem("data")) {
+        let data = []
+        data.push(goods)
+        localStorage.setItem('data', JSON.stringify(data))
+    } else {
+        let data = JSON.parse(localStorage.getItem('data'))
+        if (!data.find((v) => {
+            return v.gid === goods.gid
+        })) {
+            data.push(goods)
+            localStorage.setItem('data', JSON.stringify(data))
+        }
+    }
+}
+
 
 
 // 下方导航跳转
