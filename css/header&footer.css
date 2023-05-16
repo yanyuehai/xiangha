@@ -1,3 +1,6 @@
+header input {
+  font-size: 0.14rem;
+}
 header .xh-header {
   height: 0.44rem;
   display: flex;

@@ -2,7 +2,7 @@ function replaceHost(url) {
   var reg = /^https:\/\/.*?\//;
 
   return url.replace(reg, function (v) {
-    return "http://localhost:8000/";
+    return "http://localhost:9090/";
   });
 }
 

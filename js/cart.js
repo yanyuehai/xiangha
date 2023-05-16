@@ -31,7 +31,7 @@ function renCart(data) {
                     <input type="text" value="1">
                     <button class="next">+</button>
                 </div>
-                <div class="remove">删除</div>
+                <div class="remove" id=${v.gid}>删除</div>
             </div>
         </div>
 
@@ -99,22 +99,25 @@ function events() {
 
     // 删除
     removes.forEach((v, i) => {
-        let goodList = JSON.parse(localStorage.getItem("data"))
         v.onclick = function () {
             this.parentElement.parentElement.parentElement.style.transform = 'translateX(-120%)';
             this.parentElement.parentElement.parentElement.style.opacity = '0';
             setTimeout(() => {
+                let goodList = JSON.parse(localStorage.getItem("data"))
                 this.parentElement.parentElement.parentElement.remove()
                 updateCart()
-                goodList.splice(i, 1)
-            }, 500)
-        }
-        localStorage.setItem("data", JSON.stringify(goodList))
-        if (!JSON.parse(localStorage.getItem("data"))[0]) {
-            setTimeout(() => {
-                $('.cart-list').hide()
-                $('.cart-settle').hide()
-                $('.cart-none').show()
+                goodList.splice(goodList.findIndex(v => v.gid === this.id), 1)
+
+                localStorage.setItem("data", JSON.stringify(goodList))
+
+                if (!JSON.parse(localStorage.getItem("data"))[0]) {
+                    setTimeout(() => {
+                        $('.cart-list').hide()
+                        $('.cart-settle').hide()
+                        $('.cart-none').show()
+                    }, 500)
+                }
+
             }, 500)
         }
 
@@ -122,8 +125,8 @@ function events() {
 
     // 删除所选
     document.getElementsByClassName("obliterate")[0].onclick = function () {
-        let goodList = JSON.parse(localStorage.getItem("data"))
         boxs.forEach((v, i) => {
+            let goodList = JSON.parse(localStorage.getItem("data"))
             if (v.checked) {
                 goodList.forEach((val, ind) => {
                     if (v.id === val.gid) {
@@ -190,3 +193,6 @@ $('.xh-footer li').eq(3).on("tap", function () {
 $('.xh-footer li').eq(4).on("tap", function () {
     location.href = './user.html'
 })
+
+
+// https://txmov2.a.kwimgs.com/upic/2022/09/09/18/BMjAyMjA5MDkxODQyNTFfMTEwNTcyMTY1OV84MzgwMzczNzc1Ml8xXzM=_b_Bd1825764932b9271bb3884eecb540bf8.mp4
